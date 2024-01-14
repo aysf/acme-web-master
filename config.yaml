@@ -1,0 +1,58 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Acme Corporation
+theme: universal
+author:
+  facebook: "https://facebook.com/example"
+  twitter: "https://twitter.com/ex"
+  name: Acme Admin
+  location: Vegas
+  phone: 9234000
+  hours: "Mon-Fri: 9:00AM - 6:00PM, ET"
+
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about
+      weight: 100
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 200
+
+params: 
+  color: "#4f46e5"
+  copyright: "Copyright &copy; 2022 Acme Corp. All Rights Reserved"
+  footer:
+    - title: About
+      content: >
+        Acme coorporation is the world's leading manufacturer of digital shapes.
+        the shape lorem ipsum the shape lorem ipsum
+        the shape lorem ipsum the shape lorem ipsum
+        the shape lorem ipsum the shape lorem ipsum
+    - title: Recent Blog Post
+      recents: Blog
+      recentCount: 7
+    - title: Contact Us 
+      contact: true
+  style: blue
+  logo: /image/logo.png
+  logo_small: /image/logo.png
+  about_us: >
+    Acme coorporation is the world's leading manufacturer of digital shapes.
+    the shape lorem ipsum the shape lorem ipsum
+    the shape lorem ipsum the shape lorem ipsum
+    the shape lorem ipsum the shape lorem ipsum
+  recent_posts:
+    enable: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: true
+
+enableEmoji: true
